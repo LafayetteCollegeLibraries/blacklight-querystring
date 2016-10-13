@@ -58,4 +58,8 @@ var stringified = blqs.stringify(queryObj)
 // q=cats+and+dogs&f%5Bformat_physical%5D%5B%5D=Videocassette+(VHS)&per_page=25
 ```
 
+license
+-------
+GPL-3.0
+
 [1]: http://www.projectblacklight.org
