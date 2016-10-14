@@ -1,6 +1,8 @@
 blacklight-querystring
 ======================
 
+[![Build Status](https://travis-ci.org/LafayetteCollegeLibraries/blacklight-querystring.svg?branch=master)](https://travis-ci.org/LafayetteCollegeLibraries/blacklight-querystring) [![NPM Version](https://img.shields.io/npm/v/blacklight-querystring.svg)](https://npmjs.com/package/blacklight-querystring)
+
 Parse/stringify [Blacklight][1] querystrings to/from normalized search objects. 
 
 ```
