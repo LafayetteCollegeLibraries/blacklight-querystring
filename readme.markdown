@@ -3,8 +3,7 @@ blacklight-querystring
 
 [![Build Status](https://travis-ci.org/LafayetteCollegeLibraries/blacklight-querystring.svg?branch=master)](https://travis-ci.org/LafayetteCollegeLibraries/blacklight-querystring) [![NPM Version](https://img.shields.io/npm/v/blacklight-querystring.svg)](https://npmjs.com/package/blacklight-querystring)
 
-Parse/stringify [Blacklight][1] query strings to/from normalized search objects.
-Uses [qs][2] under the hood. 
+Parse/stringify [Blacklight][1] query strings to/from normalized search objects. Uses [qs][2] under the hood. 
 
 ```
 npm install blacklight-querystring
@@ -36,7 +35,7 @@ console.log(parsed.query)
 ```
 
 `facets` contains facet values found in the query string with the key wrapped
-in `f[` and `][]. (default: `{}`)
+in `f[` and `][]`. (default: `{}`)
 
 ```javascript
 var parsed = blqs.parse('f%5Bformat_physical%5D%5B%5D=Videocassette+(VHS)')
@@ -49,6 +48,7 @@ console.log(parsed.facets)
 //     ]
 //   }
 // }
+```
 
 `options` contains values that are neither the `query` or `facets`. Keys/values
 using object notation are parsed into objects. (default: `{}`)
