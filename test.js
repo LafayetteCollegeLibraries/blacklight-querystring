@@ -75,6 +75,25 @@ test('parse', function (_t) {
 
     t.end()
   })
+
+  _t.test('parses object notation into options', function (t) {
+    var qs = '?range[publication_date][begin]=1990&range[publication_date][end]=1999'
+    var expected = {
+      query: '',
+      facets: {},
+      options: {
+        range: {
+          publication_date: {
+            begin: 1990,
+            end: 1999,
+          }
+        }
+      }
+    }
+
+    t.deepEqual(parse(qs), expected, 'deep nested object is returned')
+    t.end()
+  })
 })
 
 test('stringify', function (_t) {
