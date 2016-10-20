@@ -54,7 +54,7 @@ console.log(parsed.facets)
 using object notation are parsed into objects. (default: `{}`)
 
 ```javascript
-var parsed = blqs.parse('per_page=25&range%5Bpub_date%5D%5Bstart%5D=1991')
+var parsed = blqs.parse('per_page=25&range%5Bpub_date%5D%5Bstart%5D=1990')
 console.log(parsed.options)
 
 // {
